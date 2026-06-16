@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ostrich | Prototipo</title>
+  <meta name="description" content="Luxury fashion experience inspired by modern editorial ecommerce." />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- FALLBACK ICONS LOCAL -->
+  <!-- <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css"/> -->
+
+  <link rel="stylesheet" href="css/estilos_prueba.css" />
+  <link rel="stylesheet" href="css/index_estilos.css" />
+  <link rel="stylesheet" href="css/about_styles.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="img/logos/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+  <!-- =========================
+    HEADER
+  ========================== -->
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="img/logos/logo_horizontal_240x70.png" alt="Logotipo" />
+      </a>
+      
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li class="nav-dropdown">
+            <a href="#" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Collections
+              <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="botanica.html">Botanical</a></li>
+            </ul>
+          </li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="index.html#ostrichGirls">Ostrich Girls</a></li>          
+          <li><a href="find_us.html">Find Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Carrito">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <!-- <img src="assets/icons/cart.svg" alt="">-->
+        </button>
+
+        <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <img src="assets/icons/menu.svg" alt=""> -->
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================
+    MAIN
+  ========================== -->
+  
+ <main>
+
+  <!-- ==========================================
+      HERO
+  =========================================== -->
+
+ <section class="about-hero section reveal">
+
+  <div class="container">
+
+    <header class="collection-intro">
+
+  <span class="eyebrow">
+    Nuestra Historia
+  </span>
+
+  <h2>
+    Un sueño tejido con propósito,
+    naturaleza y artesanía.
+  </h2>
+
+  <p>
+    Desde La Guajira creamos piezas que transforman la tradición artesanal
+    en lujo sostenible, honrando cada proceso, cada fibra y cada historia
+    que vive detrás de una creación hecha a mano.
+  </p>
+
+</header>
+
+  </div>
+
+</section>
+
+  <!-- ==========================================
+      HISTORIA
+  =========================================== -->
+
+  <section class="about-story section reveal">
+
+    <div class="container about-grid">
+
+      <article>
+
+        <span class="eyebrow">
+          Los comienzos
+        </span>
+
+        <h2>
+          Todo comenzó con una idea.
+        </h2>
+
+        <p>
+          Durante meses solo existieron bocetos, materiales y una visión.
+          Cada prueba, cada aprendizaje y cada decisión ayudaron a construir
+          una marca inspirada por la riqueza natural y cultural de Colombia.
+        </p>
+
+        <p>
+          En octubre de 2025 nació Ostrich. Lo que comenzó como un sueño
+          personal pronto encontró eco en personas que valoran la autenticidad,
+          la artesanía y el lujo consciente.
+        </p>
+
+      </article>
+
+      <figure class="about-story-media">
+
+  <img
+    src="img/editorial/editorial.png"
+    alt="Valentina, fundadora de Ostrich"
+    loading="lazy">
+
+</figure>
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+      VIDEO STORY
+  =========================================== -->
+
+  <section class="about-film section reveal">
+
+    <div class="container editorial-grid">
+
+      <article class="editorial-content">
+
+        <span class="eyebrow">
+          Gracias por florecer con nosotros
+        </span>
+
+        <h2>
+          El origen de Ostrich.
+        </h2>
+
+        <p>
+          Una historia de perseverancia, gratitud y crecimiento que comenzó
+          con una idea y hoy continúa floreciendo gracias a una comunidad
+          que cree en la belleza de lo auténtico.
+        </p>
+
+        <p>
+          Este relato comparte el camino recorrido, los desafíos,
+          los aprendizajes y la pasión que dieron vida a cada colección.
+        </p>
+
+      </article>
+
+      <div class="editorial-image">
+
+        <div class="editorial-media">
+
+          <img
+            class="editorial-cover"
+            src="img/editorial/about_us.png"
+            alt="Historia de Ostrich">
+
+          <video
+            class="editorial-video"
+            preload="metadata"
+            playsinline>
+
+            <source
+              src="img/editorial/aboutus_video.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <button
+            class="editorial-play"
+            aria-label="Reproducir video">
+
+            <i class="fa-solid fa-play"></i>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+      PROPÓSITO
+  =========================================== -->
+
+  <section class="about-purpose section reveal">
+
+    <div class="container">
+
+      <header class="section-heading">
+
+        <span class="eyebrow">
+          Nuestro Propósito
+        </span>
+
+        <h2>
+          Redefinir el lujo artesanal.
+        </h2>
+
+      </header>
+
+      <div class="purpose-grid">
+
+        <p>
+          Creemos que el lujo verdadero nace del respeto por los materiales,
+          la dedicación artesanal y el tiempo necesario para crear algo
+          verdaderamente significativo.
+        </p>
+
+        <p>
+          Cada pieza celebra la biodiversidad colombiana y el trabajo de
+          quienes transforman fibras naturales en objetos que trascienden
+          tendencias y permanecen en el tiempo.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+      GUAJIRA
+  =========================================== -->
+
+  <section class="about-origin section reveal">
+
+    <div class="container about-grid reverse">
+
+      <figure>
+
+        <img
+          src="img/about/artisans.webp"
+          alt="Proceso artesanal en La Guajira"
+          loading="lazy">
+
+      </figure>
+
+      <article>
+
+        <span class="eyebrow">
+          Hecho en La Guajira
+        </span>
+
+        <h2>
+          Donde la tradición se convierte en arte.
+        </h2>
+
+        <p>
+          Cada creación nace de la unión entre conocimiento ancestral,
+          materiales naturales y una profunda admiración por la riqueza
+          cultural de Colombia.
+        </p>
+
+        <p>
+          Desde el primer tejido hasta el último detalle, cada pieza
+          representa una historia de dedicación, identidad y belleza.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+      VALORES
+  =========================================== -->
+
+  <section class="about-values section reveal">
+
+    
+  <div class="container">
+
+    <header class="section-heading">
+
+      <span class="eyebrow">
+        Nuestros Valores
+      </span>
+
+      <h2>
+        Los principios que guían cada creación.
+      </h2>
+
+      <p>
+        Cada pieza de Ostrich nace de una filosofía que honra la
+        naturaleza, la artesanía y el valor de lo auténtico.
+      </p>
+
+    </header>
+</div>
+
+    <div class="container values-grid">
+
+      <article>
+
+        <span>01</span>
+
+        <h3>Herencia</h3>
+
+        <p>
+          Honramos las técnicas transmitidas por generaciones.
+        </p>
+
+      </article>
+
+      <article>
+
+        <span>02</span>
+
+        <h3>Naturaleza</h3>
+
+        <p>
+          Diseñamos inspirados en la biodiversidad colombiana.
+        </p>
+
+      </article>
+
+      <article>
+
+        <span>03</span>
+
+        <h3>Artesanía</h3>
+
+        <p>
+          Valoramos cada proceso y cada detalle.
+        </p>
+
+      </article>
+
+      <article>
+
+        <span>04</span>
+
+        <h3>Autenticidad</h3>
+
+        <p>
+          Creemos en historias reales y materiales nobles.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- ==========================================
+      CTA
+  =========================================== -->
+
+  <section class="about-cta section reveal">
+
+    <div class="container">
+
+      <span class="eyebrow">
+        Ostrich
+      </span>
+
+      <h2>
+        Florece con nosotros.
+      </h2>
+
+      <p>
+        Descubre piezas creadas para quienes valoran la belleza de lo
+        auténtico y la elegancia de lo hecho a mano.
+      </p>
+
+      <a
+        href="botanica.html"
+        class="btn btn-dark">
+
+        Explorar Colecciones
+
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a href="index.html" class="logo-footer">
+          <img src="img/logos/Recurso 1.png" alt="Logotipo" />
+        </a>
+        
+        <p>Handcrafted in Colombia</p>
+        <p>For treasures haunters</p>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com"  target="_blank"  aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          
+          <a href="https://www.instagram.com/ostrich_oficial/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Sobre Nosotros</h4>
+        <ul>
+          <li><a href="#editorial">Editorial</a></li>
+          <li><a href="#">Envíos y Devoluciones</a></li>
+          <li><a href="#">Politicas de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="#collections">Colecciones</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Ostrich Gif Card</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li><a href="#">Correo</a></li>
+          <li><a href="#">Ubicación</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p> © 2026 | Designed by WDesigner.co. | All rights reserved. </p>
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       WHATSAPP FLOAT BUTTON
+  ========================== -->
+
+  <a class="whatsapp-btn"
+    href="https://wa.link/ncacsm"    
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+
+    <i class="fa-brands fa-whatsapp"></i>
+    <!--img src="assets/icons/whatsapp.svg" alt="" -->
+  </a>
+
+  <div id="newsletter-modal" class="newsletter-modal">
+
+  <div class="newsletter-modal-content">
+
+    <button class="newsletter-modal-close">&times;</button>
+
+    <h3>¡Bienvenida a Ostrich!</h3>
+
+    <p>
+      Gracias por unirte a nuestra comunidad.
+      Pronto recibirás novedades, lanzamientos y piezas exclusivas.
+    </p>
+
+  </div>
+
+</div>
+
+  <script src="js/app2.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/modal_newsletter.js"></script>
+  <script src="js/personalizacion.js">  </script>
+
+ 
+
+</body>
+
+</html>

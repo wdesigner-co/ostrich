@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ostrich | Prototipo</title>
+  <meta name="description" content="Luxury fashion experience inspired by modern editorial ecommerce." />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- FALLBACK ICONS LOCAL -->
+  <!-- <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css"/> -->
+
+  <link rel="stylesheet" href="css/estilos_prueba.css" />
+  <link rel="stylesheet" href="css/index_estilos.css" />
+  <link rel="stylesheet" href="css/details.css" /> 
+</head>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="img/logos/favicon.png" type="image/png">
+
+</head>
+
+
+<body>
+
+ 
+  <!-- =========================
+    HEADER
+  ========================== -->
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="img/logos/logo_horizontal_240x70.png" alt="Logotipo" />
+      </a>
+      
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li class="nav-dropdown">
+            <a href="#" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Collections
+              <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="botanica.html">Botanical</a></li>
+            </ul>
+          </li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="index.html#ostrichGirls">Ostrich Girls</a></li>          
+          <li><a href="find_us.html">Find Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Carrito">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <!-- <img src="assets/icons/cart.svg" alt="">-->
+        </button>
+
+        <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <img src="assets/icons/menu.svg" alt=""> -->
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main >
+  
+<div class="product-detail-page">
+  <section class="product-essential container">
+    
+    <div class="product-gallery">
+      <div class="gallery-main-wrapper">
+        
+        <div class="gallery-track" id="galleryTrack">
+          <img src="img/products/Manglar.png" alt="Manglar - Vista Frontal" class="gallery-img">
+          <img src="img/products/manglar_lateral.jpg" alt="Manglar -Vista Lateral" class="gallery-img">
+          <img src="img/products/manglar_lateral2.jpg" alt="Manglar - Vista Interna" class="gallery-img">
+          <img src="img/products/manglar_modelo.png" alt="Manglar - Modelo" class="gallery-img">
+        </div>
+      </div>
+      
+      <div class="gallery-thumbs" id="galleryThumbs">
+        <button class="thumb-btn active" data-index="0">
+          <img src="img/products/Manglar.png" alt="Miniatura 1">
+        </button>
+        <button class="thumb-btn" data-index="1">
+          <img src="img/products/manglar_lateral.jpg" alt="Miniatura 2">
+        </button>
+        <button class="thumb-btn" data-index="2">
+          <img src="img/products/manglar_lateral2.jpg" alt="Miniatura 3">
+        </button>
+        <button class="thumb-btn" data-index="3">
+          <img src="img/products/manglar_modelo.png" alt="Miniatura 4">
+        </button>
+
+      </div>
+    </div>
+
+    <div class="product-info-panel">
+      <div class="product-header">
+        <span class="eyebrow">Colleción botánica</span>
+        <h1 class="product-title">Manglar</h1>
+        <div class="product-price">
+        <div class="price">
+          <span class="price-old">$850.000 COP</span>
+          <span class="price-current">$756.000 COP</span>
+        </div>
+        <div class="quantity-selector">
+            <button type="button" class="qty-btn" id="qtyDecrypt" aria-label="Disminuir cantidad">-</button>
+            <input type="number" id="productQty" name="quantity" value="1" min="1" readonly>
+            <button type="button" class="qty-btn" id="qtyEncrypt" aria-label="Aumentar cantidad">+</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="product-description">
+        <p>Mochila con asa metálica dorada, plumas verdes y una orquídea mariposa blanca al centro.</p>
+      </div>
+
+      <form class="product-form" id="purchaseForm">
+
+        <div class="purchase-actions">
+          
+          <button type="button" class="btn-cta btn-ghost-cart">
+            <i class="fa-solid fa-cart-plus"></i> <span class="btn-text">Añadir al carrito</span>
+          </button>
+          <button type="submit" class="btn-cta btn-add-to-cart">
+            <i class="fa-solid fa-shopping-bag"></i> Comprar Ahora
+          </button>
+        </div>
+      </form>
+
+      <div class="product-details-accordion">
+        
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+               <i class="fa-solid fa-circle-info"> </i>
+            <span>Detalles y Composición</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>El Bolso Manglar encarna la fusión perfecta entre la artesanía de lujo tradicional y la innovación de diseño contemporáneo. Cada pieza se elabora seleccionando rigurosamente cuero de textura prémium con costuras reforzadas a mano y sutiles detalles estructurados.</p>
+            <ul>
+              <li>Material exterior: Cuero artesanal grabado de textura prémium.</li>
+                <li>Forro interior: Sarga de algodón suave de alta durabilidad.</li>
+                <li>Herrajes: Aleación metálica con baño de oro champagne antioxidante.</li>
+                <li>Dimensiones: 28cm de ancho x 22cm de alto x 12cm de profundidad.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+           <i class="fa-solid fa-cart-flatbed"></i>
+            <span>Envío y Devoluciones Exclusivas</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Envíos nacionales asegurados gratuitos a toda Colombia para pedidos superiores a $200.000. Los tiempos estimados de entrega oscilan entre 2 y 5 días hábiles dependiendo de la región de destino.</p>
+              <p>Garantizamos devoluciones válidas dentro de los primeros 14 días naturales posteriores a la entrega del producto, siempre que la pieza se conserve en su empaque original, con etiquetas intactas y sin señales de uso.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  </div>
+
+   <!-- =========================
+      QUIZAS TE PUEDA INTERESAR
+    ========================== -->
+    <section class="featured section reveal">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Colección Botánica</span>
+          <h3>QUIZAS TE PUEDA INTERESAR</h3>
+        </div>
+
+        <div class="product-grid">
+          <!-- PRODUCT CARD 1-->
+          <article class="product-card">
+            <div class="product-image hover-reveal">
+              <!--src="https://placehold.co/700x900/bdbdbd/ffffff?text=Producto+1"-->
+              <img class="primary-image" src="img/products/Manglar.png" alt="Producto 1"/>
+               <!--src="https://placehold.co/700x900/9f9f9f/ffffff?text=Hover+1"-->
+              <img class="secondary-image" src="img/products/hover_manglar.png" alt="Producto hover"/>
+              <span class="badge">TOP</span>
+            </div>
+
+            <div class="product-info">
+              <h4>Manglar</h4>
+              <p class="category">Mochila asa metálica</p>
+              <span class="price">$756.000 COP</span>
+            </div>
+          </article>
+
+          <!-- PRODUCT CARD 2 -->
+          <article class="product-card">
+            <div class="product-image hover-reveal">
+              <!-- src="https://placehold.co/700x900/bdbdbd/ffffff?text=Producto+2"-->
+              <img class="primary-image" src="img/products/Coralina.png" alt="Producto 2"/>
+              <img class="secondary-image" src="img/products/hover_coralina.png" alt="Producto hover"/>
+              <span class="badge sale">SALE</span>
+            </div>
+
+            <div class="product-info">
+              <h4>Coralina</h4>
+              <p class="category">Mochila asa metálica</p>
+              <span class="price">$756.000 COP</span>
+            </div>
+          </article>
+
+          <!-- PRODUCT CARD 3 -->
+          <article class="product-card">
+            <div class="product-image hover-reveal">
+              <img class="primary-image" src="img/products/cattleya_azalea.png" alt="Producto 3" />
+              <img class="secondary-image" src="img/products/hover_azalea.png"  alt="Producto hover"/>
+            </div>
+
+            <div class="product-info">
+              <h4>Azalea</h4>
+              <p class="category">Mochila asa larga</p>
+              <span class="price">$240.000 COP</span>
+            </div>
+          </article>
+
+          <!-- PRODUCT CARD 4 -->
+          <article class="product-card">
+            <div class="product-image hover-reveal">
+              <img class="primary-image" src="img/products/Cattleya_Beige.png" alt="Producto 4" />
+              <img class="secondary-image" src="img/products/hover_cattaleya_beige.png" alt="Producto hover" />
+            </div>
+
+            <div class="product-info">
+              <h4>Cattleya Beige</h4>
+              <p class="category">Mochila asa corta</p>
+              <span class="price">$680.000 COP</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+    </section>
+
+  
+</main>
+
+<!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a href="index.html" class="logo-footer">
+          <img src="img/logos/Recurso 1.png" alt="Logotipo" />
+        </a>
+        
+        <p>Handcrafted in Colombia</p>
+        <p>For treasures haunters</p>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com"  target="_blank"  aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          
+          <a href="https://www.instagram.com/ostrich_oficial/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Sobre Nosotros</h4>
+        <ul>
+          <li><a href="#editorial">Editorial</a></li>
+          <li><a href="#">Envíos y Devoluciones</a></li>
+          <li><a href="#">Politicas de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="#collections">Colecciones</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Ostrich Gif Card</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li><a href="#">Correo</a></li>
+          <li><a href="#">Ubicación</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p> © 2026 | Designed by WDesigner.co. | All rights reserved. </p>
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       WHATSAPP FLOAT BUTTON
+  ========================== -->
+
+  <a class="whatsapp-btn"
+    href="https://wa.link/ncacsm"    
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+
+    <i class="fa-brands fa-whatsapp"></i>
+    <!--img src="assets/icons/whatsapp.svg" alt="" -->
+  </a>
+
+  <script src="js/app2.js"></script>
+  <script src="js/details.js"></script>
+</body>
+
+</body>
+
+</html>

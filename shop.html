@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ostrich | Prototipo</title>
+  <meta name="description" content="Luxury fashion experience inspired by modern editorial ecommerce." />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- FALLBACK ICONS LOCAL -->
+  <!-- <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css"/> -->
+
+  <link rel="stylesheet" href="css/estilos_prueba.css" />
+  <link rel="stylesheet" href="css/index_estilos.css" />
+  <link rel="stylesheet" href="css/shop.css" /> 
+</head>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="img/logos/favicon.png" type="image/png">
+
+</head>
+
+
+<body>
+
+ 
+  <!-- =========================
+    HEADER
+  ========================== -->
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="img/logos/logo_horizontal_240x70.png" alt="Logotipo" />
+      </a>
+      
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li class="nav-dropdown">
+            <a href="#" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Collections
+              <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="botanica.html">Botanical</a></li>
+            </ul>
+          </li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="index.html#ostrichGirls">Ostrich Girls</a></li>          
+          <li><a href="find_us.html">Find Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Carrito">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <!-- <img src="assets/icons/cart.svg" alt="">-->
+        </button>
+
+        <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <img src="assets/icons/menu.svg" alt=""> -->
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main class="shop-page">
+    
+    <section class="shop-hero section">
+        <div class="container center">
+            <span class="eyebrow">Colección Botánica</span>
+            <h1>Shop</h1>
+            <p>Descubre nuestra colección completa diseñada con precisión y lujo contemporáneo.</p>
+        </div>
+    </section>
+
+    <div class="shop-toolbar">
+        <div class="container toolbar-inner">
+            <div class="product-count">
+                <span>8 Productos</span>
+            </div>
+            <div class="toolbar-actions">
+                <button class="toolbar-btn" id="btn-filter">
+                    <i class="fa-solid fa-sliders"></i> Filtros
+                </button>
+                <div class="custom-select">
+                    <select aria-label="Ordenar productos">
+                        <option value="destacados">Destacados</option>
+                        <option value="recientes">Más recientes</option>
+                        <option value="precio-bajo">Precio: de menor a mayor</option>
+                        <option value="precio-alto">Precio: de mayor a menor</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="shop-products section">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Manglar-->
+                <article class="product-card">
+                    <a href="details.html" class="product-link">
+                        <div class="product-image hover-reveal">
+                            <span class="badge sale">top</span>
+                            <img src="img/collections/hero_manglar.png" class="primary-image" alt="Manglar">
+                            <img src="img/products/hover_manglar.png" class="secondary-image" alt="Manglar">
+                            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Asa Metálica</span>
+                            <h3>Manglar</h3>
+                            <div class="price-container">                               
+                                <span class="price">$756.000 COP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Jazmin-->
+
+                <article class="product-card">
+                    <a href="producto-detalle.html" class="product-link">
+                        <div class="product-image hover-reveal">
+                            <span class="badge">NUEVO</span>
+                            <img src="img/collections/hero_rosado.png" class="primary-image" alt="Jazmin">
+                            <img src="img/products/hover_coralina.png" class="secondary-image" alt="Cartera Ostrich Detalle">
+                            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Asa Metálica</span>
+                            <h3>Jazmín</h3>
+                            <div class="price-container">
+                                <span class="price">$756.000 COP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Dalia-->
+
+                <article class="product-card">
+                    <a href="producto-detalle.html" class="product-link">
+                        <div class="product-image hover-reveal">
+                            <img src="img/collections/hero_morado.png" class="primary-image" alt="Bolso Cruzado">
+                            <img src="https://placehold.co/600x800/dddddd/111111?text=Bag+03+Hover" class="secondary-image" alt="Bolso Cruzado Detalle">
+                            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Asa Metálica</span>
+                            <h3>Dalia</h3>
+                            <div class="price-container">
+                                <span class="price">$580.000 COP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Marfil-->
+
+                <article class="product-card">
+                    <a href="producto-detalle.html" class="product-link">
+                        <div class="product-image hover-reveal">
+                            <img src="img/collections/hero_marfil.png" class="primary-image" alt="Mochila Piel">
+                            <img src="https://placehold.co/600x800/dddddd/111111?text=Bag+04+Hover" class="secondary-image" alt="Mochila Piel Detalle">
+                            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Asa Corta</span>
+                            <h3>Marfil</h3>
+                            <div class="price-container">
+                                <span class="price">$680.000 COP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+
+
+
+
+                <article class="product-card">
+                    <a href="details.html" class="product-link">
+                        <div class="product-image hover-reveal">
+                            <!--span class="badge sale">top</!--span-->
+                            <img src="img/collections/tela_01.png" class="primary-image" alt="Azalea">
+                            <img src="img/products/hover_azalea.png" class="secondary-image" alt="Azalea">
+                            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Asa Larga</span>
+                            <h3>Azalea</h3>
+                            <div class="price-container">                               
+                                <span class="price">$240.000 COP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="producto-detalle.html" class="product-link">
+                        <div class="product-image hover-reveal">
+                            <!--span class="badge">NUEVO</!--span-->
+                            <img src="img/collections/tela_02.png" class="primary-image" alt="Cattaleya">
+                            <img src="img/products/hover_cattaleya_beige.png" class="secondary-image" alt="Cartera Ostrich Detalle">
+                            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Asa Corta</span>
+                            <h3>Cattaleya Beige</h3>
+                            <div class="price-container">
+                                <span class="price">$680.000 COP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="producto-detalle.html" class="product-link">
+                        <div class="product-image hover-reveal">
+                            <img src="img/collections/tela_03.png" class="primary-image" alt="Azucena">
+                            <img src="https://placehold.co/600x800/dddddd/111111?text=Bag+03+Hover" class="secondary-image" alt="Bolso Cruzado Detalle">
+                            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Asa Larga</span>
+                            <h3>Azucena</h3>
+                            <div class="price-container">
+                                <span class="price">$695.000 COP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="producto-detalle.html" class="product-link">
+                        <div class="product-image hover-reveal">
+                            <img src="img/collections/tela_04.png" class="primary-image" alt="Gaviota">
+                            <img src="https://placehold.co/600x800/dddddd/111111?text=Bag+04+Hover" class="secondary-image" alt="Mochila Piel Detalle">
+                            <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Asa Larga</span>
+                            <h3>Gaviota</h3>
+                            <div class="price-container">
+                                <span class="price">$380.000 COP</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+            
+            <div class="load-more-container center" style="margin-top: 4rem;">
+                <button class="btn btn-dark">Cargar más productos</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a href="index.html" class="logo-footer">
+          <img src="img/logos/Recurso 1.png" alt="Logotipo" />
+        </a>
+        
+        <p>Handcrafted in Colombia</p>
+        <p>For treasures haunters</p>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com"  target="_blank"  aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          
+          <a href="https://www.instagram.com/ostrich_oficial/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Sobre Nosotros</h4>
+        <ul>
+          <li><a href="#editorial">Editorial</a></li>
+          <li><a href="#">Envíos y Devoluciones</a></li>
+          <li><a href="#">Politicas de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="#collections">Colecciones</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Ostrich Gif Card</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li><a href="#">Correo</a></li>
+          <li><a href="#">Ubicación</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p> © 2026 | Designed by WDesigner.co. | All rights reserved. </p>
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       WHATSAPP FLOAT BUTTON
+  ========================== -->
+
+  <a class="whatsapp-btn"
+    href="https://wa.link/ncacsm"    
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+
+    <i class="fa-brands fa-whatsapp"></i>
+    <!--img src="assets/icons/whatsapp.svg" alt="" -->
+  </a>
+
+  <script src="js/app2.js"></script>
+  
+</body>
+
+</body>
+
+</html>
