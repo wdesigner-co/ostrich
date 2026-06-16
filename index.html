@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ostrich | Prototipo</title>
+  <meta name="description" content="Luxury fashion experience inspired by modern editorial ecommerce." />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- FALLBACK ICONS LOCAL -->
+  <!-- <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css"/> -->
+
+  <link rel="stylesheet" href="css/estilos_prueba.css" />
+  <link rel="stylesheet" href="css/index_estilos.css" />
+
+  <!-- FAVICON -->
+  <link rel="icon" href="img/logos/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+  <!-- =========================
+    HEADER
+  ========================== -->
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="img/logos/logo_horizontal_240x70.png" alt="Logotipo" />
+      </a>
+      
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li class="nav-dropdown">
+            <a href="#" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Collections
+              <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="botanica.html">Botanical</a></li>
+            </ul>
+          </li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="index.html#ostrichGirls">Ostrich Girls</a></li>          
+          <li><a href="find_us.html">Find Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Carrito">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <!-- <img src="assets/icons/cart.svg" alt="">-->
+        </button>
+
+        <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <img src="assets/icons/menu.svg" alt=""> -->
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================
+    MAIN
+  ========================== -->
+  <main>
+    <section class="hero">
+      <!--div class="hero-image">
+        <img src="img/hero/hero_01.png" alt="Colección destacada" />
+      </!--div-->
+      <div class="hero-image">
+        <picture>
+          <!-- Mobile -->
+          <source media="(max-width: 768px)" srcset="img/hero/hero_v.png">
+          <!-- Desktop / Tablet -->
+          <img src="img/hero/hero_h.png" alt="Colección destacada">
+        </picture>
+      </div>
+      
+      <div class="hero-overlay"></div>
+      
+      <div class="container" style="width: 100%;">
+        <div class="hero-content">
+          <span class="eyebrow">Colección Botánica</span>
+          <h1>Lujo artesanal desde La Guajira</h1>         
+          <p>Descubre piezas únicas coronadas con orquídeas 100% reales. Donde la naturaleza se transforma en arte y la belleza se vuelve eterna.</p>          
+          <div class="hero-buttons">
+            <a href="#collections" class="btn btn-primary">Ver Colección</a>
+            <a href="#editorial" class="btn btn-secondary">Nuestra Historia</a>
+          </div>
+        </div>      
+      </div>
+    </section>
+
+    <!-- =========================
+      COLLECTION CARDS
+    ========================== -->
+    <section id="collections" class="collection-cards section reveal">
+      <div class="container">
+        <div class="section-heading">          
+          <h2>Collections</h2>
+        </div>
+
+        <div class="collections-grid">
+          <!-- CARD -->
+           <a href="botanica.html"><article class="collection-card">
+            <img src="img/collections/colltction03.png" alt="Colección Botanica"/>
+            <div class="collection-overlay"></div>
+            <h3>Botánica</h3>
+          </article></a>
+
+          <!-- CARD -->
+          <a href="botanica.html"><article class="collection-card">
+            <img src="img/collections/collection04.png" alt="Colección Ostrich Girls"/>
+            <div class="collection-overlay"></div>
+            <h3> Botánica</h3>
+          </article></a>
+
+          <!-- CARD -->
+          <a href="botanica.html"><article class="collection-card">
+            <img src="img/collections/accesories.png" alt="Find Us"/>
+            <div class="collection-overlay"></div>
+            <h3> Accesorios</h3>
+          </article></a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+      MAS VENDIDOS
+    ========================== -->
+    <section class="featured section reveal">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Colección Botánica</span>
+          <h2>MÁS VENDIDOS</h2>
+        </div>
+
+        <div class="product-grid">
+          <!-- PRODUCT CARD 1 Manglar -->
+          <a href="details.html">
+            <article class="product-card">
+            <div class="product-image hover-reveal">
+              <!--src="https://placehold.co/700x900/bdbdbd/ffffff?text=Producto+1"-->
+              <img class="primary-image" src="img/products/Manglar.png" alt="Producto 1"/>
+               <!--src="https://placehold.co/700x900/9f9f9f/ffffff?text=Hover+1"-->
+              <img class="secondary-image" src="img/products/hover_manglar.png" alt="Producto hover"/>
+              <span class="badge">TOP</span>
+            </div>
+
+            <div class="product-info">
+              <h4>Manglar</h4>
+              <p class="category">Mochila asa metálica</p>
+              <span class="price">$756.000 COP</span>
+            </div>
+          </article>
+          </a>
+
+          <!-- PRODUCT CARD 2 JAZMIN -->
+          <article class="product-card">
+            <div class="product-image hover-reveal">
+              <!-- src="https://placehold.co/700x900/bdbdbd/ffffff?text=Producto+2"-->
+              <img class="primary-image" src="img/products/jazmin.png" alt="Producto 2"/>
+              <img class="secondary-image" src="img/products/hover_coralina.png" alt="Producto hover"/>
+              <span class="badge sale">SALE</span>
+            </div>
+
+            <div class="product-info">
+              <h4>Jazmin</h4>
+              <p class="category">Mochila asa metálica</p>
+              <span class="price">$756.000 COP</span>
+            </div>
+          </article>
+
+          <!-- PRODUCT CARD 3 -->
+          <article class="product-card">
+            <div class="product-image hover-reveal">
+              <img class="primary-image" src="img/products/cattleya_azalea.png" alt="Producto 3" />
+              <img class="secondary-image" src="img/products/hover_azalea.png"  alt="Producto hover"/>
+            </div>
+
+            <div class="product-info">
+              <h4>Azalea</h4>
+              <p class="category">Mochila asa larga</p>
+              <span class="price">$240.000 COP</span>
+            </div>
+          </article>
+
+          <!-- PRODUCT CARD 4 -->
+          <article class="product-card">
+            <div class="product-image hover-reveal">
+              <img class="primary-image" src="img/products/Cattleya_Beige.png" alt="Producto 4" />
+              <img class="secondary-image" src="img/products/hover_cattaleya_beige.png" alt="Producto hover" />
+            </div>
+
+            <div class="product-info">
+              <h4>Cattleya Beige</h4>
+              <p class="category">Mochila asa corta</p>
+              <span class="price">$680.000 COP</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+      EDITORIAL
+    ========================== -->
+    <section id="editorial" class="editorial section reveal">
+      <div class="container editorial-grid">
+        <div class="editorial-content">
+          <span class="eyebrow">Desde el corazón de La Guajira</span>
+          <h2>Redefining Artisanal Luxury</h2>
+          <p>Transformamos la tradición en <strong>lujo cien por ciento sostenible</strong>. Honramos el proceso y las manos artesanas que dejan su alma en cada diseño, entrelazando fibras naturales con orquídeas reales colombianas. Elevamos el diseño latino desde lo ético y lo emocional, porque el lujo verdadero no se fabrica, se siembra.</p>
+          <a href="about_us.html" class="btn btn-dark">Florece con nosotros</a>
+        </div>
+
+        <div class="editorial-image">
+          <div class="editorial-media">
+            <img  class="editorial-cover"
+            src="img/editorial/editorial.png"
+            alt="Editorial">
+            
+            <video  class="editorial-video"
+              preload="metadata"
+              playsinline>
+             <source
+              src="img/editorial/editorial_video.mp4"
+              type="video/mp4">
+            </video>
+            
+            <button class="editorial-play" aria-label="Reproducir video">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ======================================
+      OSTRICH GIRLS
+    ====================================== -->
+    <section id="ostrichGirls" class="testimonials section reveal">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">Community</span>
+          <h2>OSTRICH GIRLS</h2>
+          <p>Mujeres que llevan nuestras piezas y cuentan su historia.</p>
+        </div>
+
+        <div class="testimonial-slider">
+          <button class="slider-btn prev" aria-label="Anterior">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          
+          <div class="testimonial-container">
+            <div class="testimonial-track">
+              
+              <article class="testimonial-card">
+                <div class="testimonial-image">
+                  <img src="img/testimonials/ostrich_girls0.png" alt="Cliente">
+                </div>
+                <div class="testimonial-content">
+                  <i class="fa-solid fa-quote-right quote-icon"></i>
+                  <p>"La calidad artesanal es impresionante. Cada detalle transmite exclusividad."</p>
+                  <div class="testimonial-meta">
+                    <h3>Isabella Gómez</h3>
+                    <span>Bogotá</span>
+                  </div>
+                </div>
+              </article>
+              
+              <article class="testimonial-card">
+                <div class="testimonial-image">
+                  <img src="img/testimonials/ostrich_girls2.jpg" alt="Cliente">
+                </div>
+                <div class="testimonial-content">
+                  <i class="fa-solid fa-quote-right quote-icon"></i>
+                  <p>"Una marca que realmente entiende el lujo contemporáneo."</p>
+                  <div class="testimonial-meta">
+                    <h3>Laura Martínez</h3>
+                    <span>Medellín</span>
+                  </div>
+                </div>
+              </article>
+              
+              <article class="testimonial-card">
+                <div class="testimonial-image">
+                  <img src="img/testimonials/ostrich_girls3.jpg" alt="Cliente">
+                </div>
+                <div class="testimonial-content">
+                  <i class="fa-solid fa-quote-right quote-icon"></i>
+                  <p>"Mi bolso se convirtió en la pieza favorita de mi colección."</p>
+                  <div class="testimonial-meta">
+                    <h3>Valentina Ruiz</h3>
+                    <span>Cartagena</span>
+                  </div>
+                </div>
+              </article>
+              
+              <article class="testimonial-card">
+                <div class="testimonial-image">
+                  <img src="img/testimonials/ostrich_girls1.jpg" alt="Cliente">
+                </div>
+                <div class="testimonial-content">
+                  <i class="fa-solid fa-quote-right quote-icon"></i>
+                  <p>"Mi bolso es un tesoro que anhelaba."</p>
+                  <div class="testimonial-meta">
+                    <h3>Ana Parra</h3>
+                    <span>Cartagena</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+          <button class="slider-btn next" aria-label="Siguiente">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+      NEWSLETTER
+    ========================== -->    
+    <section class="newsletter section">
+
+      <div class="container newsletter-box">
+
+        <div>
+          <span class="eyebrow">
+            Newsletter
+          </span>
+
+          <h2>
+            Únete a nuestra comunidad
+          </h2>
+        </div>
+
+        <form class="newsletter-form">
+
+          <label class="sr-only" for="email">
+            Correo electrónico
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Tu correo electrónico"
+            required
+          />
+
+          <button type="submit" class="btn btn-primary">
+            Suscribirse
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================
+      CUSTOMIZATION FORM
+    ====================================== -->
+    <section class="customization section reveal" id="personalizar">
+      <div class="container">
+        <div class="customization-box">
+          <div class="customization-content">
+            <span class="eyebrow">Atelier</span>
+            <h2>Personaliza tu Pieza</h2>
+            <p>Haz que tu producto sea verdaderamente único. Déjanos tus datos, indícanos el modelo que deseas intervenir y nuestro equipo de diseño te contactará para crear algo exclusivo.</p>
+          </div>
+          
+          <form id="customization-form" class="customization-form">
+            <div class="form-group">
+              <label for="cust-name" class="sr-only">Nombre Completo</label>
+              <input type="text" id="cust-name" class="form-control" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form-group">
+              <label for="cust-phone" class="sr-only">Teléfono</label>
+              <input type="tel" id="cust-phone" class="form-control" placeholder="Tu teléfono (ej. +57 300 00 00)" required>
+            </div>
+            <div class="form-group">
+              <label for="cust-model" class="sr-only">Modelo del Producto</label>
+              <input type="text" id="cust-model" class="form-control" placeholder="Modelo a personalizar (ej. Manglar)" required>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">
+              Solicitar por WhatsApp 
+              <i class="fa-brands fa-whatsapp" style="margin-left: 8px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a href="index.html" class="logo-footer">
+          <img src="img/logos/Recurso 1.png" alt="Logotipo" />
+        </a>
+        
+        <p>Handcrafted in Colombia</p>
+        <p>For treasures haunters</p>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com"  target="_blank"  aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          
+          <a href="https://www.instagram.com/ostrich_oficial/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Sobre Nosotros</h4>
+        <ul>
+          <li><a href="#editorial">Editorial</a></li>
+          <li><a href="#">Envíos y Devoluciones</a></li>
+          <li><a href="#">Politicas de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="#collections">Colecciones</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Ostrich Gif Card</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li><a href="#">Correo</a></li>
+          <li><a href="#">Ubicación</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p> © 2026 | Designed by WDesigner.co. | All rights reserved. </p>
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       WHATSAPP FLOAT BUTTON
+  ========================== -->
+
+  <a class="whatsapp-btn"
+    href="https://wa.link/ncacsm"    
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+
+    <i class="fa-brands fa-whatsapp"></i>
+    <!--img src="assets/icons/whatsapp.svg" alt="" -->
+  </a>
+
+  <div id="newsletter-modal" class="newsletter-modal">
+
+  <div class="newsletter-modal-content">
+
+    <button class="newsletter-modal-close">&times;</button>
+
+    <h3>¡Bienvenida a Ostrich!</h3>
+
+    <p>
+      Gracias por unirte a nuestra comunidad.
+      Pronto recibirás novedades, lanzamientos y piezas exclusivas.
+    </p>
+
+  </div>
+
+</div>
+
+  <script src="js/app2.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/modal_newsletter.js"></script>
+  <script src="js/personalizacion.js">  </script>
+
+ 
+
+</body>
+
+</html>
