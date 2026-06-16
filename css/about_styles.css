@@ -1,0 +1,314 @@
+
+.collection-intro{
+
+    max-width:900px;
+
+    margin-inline:auto;
+
+    text-align:center;
+
+    margin-bottom:8rem;
+}
+
+.collection-intro p{
+
+    max-width:720px;
+
+    margin-inline:auto;
+
+    margin-top:1.5rem;
+
+    font-size:1.05rem;
+}
+
+
+
+/* ==========================================
+   SHARED GRID
+========================================== */
+
+.about-grid {
+
+  display: grid;
+
+  gap: 2rem;
+
+  align-items: center;
+}
+
+.about-grid article p {
+
+  max-width: 60ch;
+}
+
+.about-grid figure {
+
+  margin: 0;
+}
+
+.about-grid img {
+
+  width: 100%;
+
+  display: block;
+
+  border-radius: var(--radius-md);
+}
+
+/* ==========================================
+   PURPOSE
+========================================== */
+
+.about-purpose {
+
+  background:
+    var(--color-surface);
+}
+
+.section-heading {
+
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+.section-heading h2 {
+
+  margin-inline: auto;
+}
+
+.purpose-grid {
+
+  display: grid;
+
+  gap: 1.5rem;
+}
+
+.purpose-grid p {
+
+  max-width: 60ch;
+
+  margin: 0 auto;
+}
+
+/* ==========================================
+   VALUES
+========================================== */
+
+.values-grid {
+
+  display: grid;
+
+  gap: 2rem;
+}
+
+.values-grid article {
+
+  border-top:
+    1px solid
+    rgba(0,0,0,.08);
+
+  padding-top: 1.5rem;
+}
+
+.values-grid span {
+
+  display: block;
+
+  margin-bottom: .75rem;
+
+  font-size: .85rem;
+
+  letter-spacing: .15em;
+
+  opacity: .6;
+}
+
+.values-grid h3 {
+
+  margin-bottom: .75rem;
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+.about-cta {
+
+  text-align: center;
+}
+
+.about-cta h2 {
+
+  margin-inline: auto;
+}
+
+.about-cta p {
+
+  max-width: 50ch;
+
+  margin:
+    1rem auto 2rem;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (min-width:768px){
+
+  .values-grid{
+
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+  .purpose-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap:2rem;
+  }
+}
+
+/* ==========================================
+   LAPTOP
+========================================== */
+
+@media (min-width:1024px){
+
+  .about-grid{
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap:4rem;
+  }
+
+  .about-grid.reverse{
+
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .about-grid.reverse figure{
+
+    order:1;
+  }
+
+  .about-grid.reverse article{
+
+    order:2;
+  }
+
+  .values-grid{
+
+    grid-template-columns:
+      repeat(4,1fr);
+  }
+}
+
+.about-story-media{
+
+  display:flex;
+
+  justify-content:flex-end;
+}
+
+.about-story-media img{
+
+  width:80%;
+
+  aspect-ratio:4 / 5;
+
+  object-fit:cover;
+
+  border-radius:var(--radius-md);
+
+  display:block;
+}
+
+
+
+
+
+/*arreglos y correcciones*/
+@media (max-width:1023px){
+
+  .about-story-media{
+
+    justify-content:center;
+  }
+
+  .about-story-media img{
+
+    width:100%;
+  }
+
+}
+
+@media (max-width:1023px){
+
+  .about-story-media{
+
+    justify-content:center;
+  }
+
+  .about-story-media img{
+
+    width:100%;
+  }
+
+}
+
+/*seccion valores*/
+.about-values .section-heading{
+
+  text-align:center;
+
+  margin-bottom:3rem;
+}
+
+.about-values .section-heading h2{
+
+  margin-inline:auto;
+
+  max-width:18ch;
+}
+
+.about-values .section-heading p{
+
+  max-width:60ch;
+
+  margin:
+    1rem auto 0;
+}
+
+
+/* corrección seccion hero*/
+.about-hero .section-heading{
+
+  text-align:center;
+
+  max-width:72rem;
+
+  margin-inline:auto;
+}
+
+.about-hero h1{
+
+  max-width:18ch;
+
+  margin-inline:auto;
+
+  text-wrap:balance;
+}
+
+.about-intro{
+
+  max-width:68ch;
+
+  margin:
+    1.25rem auto 0;
+}

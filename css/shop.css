@@ -1,0 +1,173 @@
+/* =========================================================
+   PÁGINA DE TIENDA (SHOP)
+========================================================= */
+
+.shop-page {
+    padding-top: 85px; /* Compensa el header fijo */
+}
+
+.shop-hero {
+    padding: 4rem 0 2rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.shop-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin: 0.5rem 0 1rem;
+}
+
+/* =====================
+   BARRA DE HERRAMIENTAS
+====================== */
+.shop-toolbar {
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-background);
+    position: sticky;
+    top: 85px; /* Se queda pegada debajo del header al hacer scroll */
+    z-index: 90;
+    padding: 1rem 0;
+}
+
+.toolbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.product-count {
+    color: var(--color-text-secondary);
+}
+
+.toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.toolbar-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-primary);
+}
+
+/* Estilo para el select limpio */
+.custom-select select {
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    outline: none;
+}
+
+/* =====================
+   GRILLA DE PRODUCTOS
+====================== */
+
+/* MOBILE FIRST: 2 Columnas exactas */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* Gap pequeño para móviles */
+}
+
+.product-card {
+    text-align: left;
+}
+
+.product-info {
+    padding: 0.8rem 0;
+}
+
+.product-info .category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.product-info h3 {
+    font-size: 0.95rem; /* Letra un poco más pequeña en móvil para que quepa bien */
+    font-family: var(--font-primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Corta textos largos con ... */
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+}
+
+/* Botón de Favoritos (Wishlist) sobre la imagen */
+.wishlist-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: var(--transition-fast);
+    z-index: 10;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
+    color: var(--color-primary);
+}
+
+/* =====================
+   RESPONSIVE (TABLET & DESKTOP)
+====================== */
+
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem; /* Más espacio en tablets */
+    }
+    
+    .product-info h3 {
+        font-size: 1.15rem; /* Restauramos tamaño en pantallas más grandes */
+    }
+    
+    .shop-hero {
+        padding: 6rem 0 3rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 Columnas en Desktop */
+        gap: 2.5rem;
+    }
+}
