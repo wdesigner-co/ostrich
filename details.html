@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/estilos_prueba.css" />
   <link rel="stylesheet" href="css/index_estilos.css" />
   <link rel="stylesheet" href="css/details.css" /> 
+  <link rel="stylesheet" href="css/cart_drawer.css">
 </head>
 
   <!-- FAVICON -->
@@ -61,9 +62,8 @@
       </nav>
 
       <div class="header-actions">
-        <button class="icon-btn" aria-label="Carrito">
+        <button id="cartButton" class="icon-btn" aria-label="Carrito"> 
           <i class="fa-solid fa-bag-shopping"></i>
-          <!-- <img src="assets/icons/cart.svg" alt="">-->
         </button>
 
         <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
@@ -332,8 +332,33 @@
     <!--img src="assets/icons/whatsapp.svg" alt="" -->
   </a>
 
+ <!-- Bolsa de Compras -->
+<aside id="cartDrawer" class="cart-drawer" aria-hidden="true"> 
+  <header class="cart-header">
+    <h2>Mi carrito<span id="cartCount"> (0)</span></h2>
+    <button class="cart-close" aria-label="Cerrar"> 
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </header>
+
+  <section class="cart-items" id="cartItems">
+    <!-- JS -->
+  </section>
+  <footer class="cart-footer">
+    <div class="cart-summary">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">$0</strong>
+    </div>
+    <a href="checkout.html" class="btn btn-dark cart-checkout">Checkout</a>
+  </footer>
+</aside>
+
+
+<div id="cartOverlay"class="cart-overlay"></div>
+
   <script src="js/app2.js"></script>
   <script src="js/details.js"></script>
+  <script src="js/drawer.js"></script>
 </body>
 
 </body>
