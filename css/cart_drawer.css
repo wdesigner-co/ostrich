@@ -1,0 +1,211 @@
+/* ==========================================
+CART DRAWER
+========================================== */
+
+.cart-drawer{
+  position:fixed;
+  top:0;
+  right:0;
+  width:min(
+    420px,
+    100vw
+  );
+  height:100vh;
+  background:white;
+  z-index:4000;
+  display:flex;
+  flex-direction:column;
+  transform:translateX(100%);
+  transition:
+    transform .35s ease;
+}
+
+.cart-drawer.active{
+  transform:translateX(0);
+}
+
+/* ==========================================
+OVERLAY
+========================================== */
+
+.cart-overlay{
+  position:fixed;
+  inset:0;
+  background: rgba(0,0,0,.4);
+  opacity:0;
+  visibility:hidden;
+  transition:.3s;
+  z-index:3990;
+}
+
+.cart-overlay.active{
+  opacity:1;
+  visibility:visible;}
+
+/* ==========================================
+HEADER
+========================================== */
+
+.cart-header{
+  padding:1.5rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:
+    1px solid
+    var(--color-border);
+}
+
+/* ==========================================
+CLOSE BUTTON
+========================================== */
+
+.cart-close{
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  background:rgba(0,0,0,.04);
+  transition: transform .3s ease, background .3s ease;
+}
+
+.cart-close:hover{
+  transform:rotate(90deg);
+  background: rgba(0,0,0,.08);
+}
+
+.cart-close i{
+  font-size:1rem;
+}
+
+/* ==========================================
+ITEMS
+========================================== */
+
+.cart-items{
+  flex:1;
+  overflow:auto;
+  padding:1rem;
+}
+
+/* ==========================================
+ITEM
+========================================== */
+
+.cart-item{
+  display:grid;
+  grid-template-columns: 90px 1fr;
+  gap:1rem;
+  padding-bottom:1rem;
+  margin-bottom:1rem;
+  border-bottom: 1px solid  rgba(0,0,0,.08);
+}
+
+.cart-item img{
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  border-radius: var(--radius-sm);
+}
+
+.cart-item-info h3{ 
+  font-size:1rem;
+  margin-bottom:.5rem;
+}
+
+.cart-price{
+  font-weight:600;
+}
+
+
+/* ==========================================
+CART CONTROLS
+========================================== */
+
+.cart-controls{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  margin-top:1rem;
+}
+
+/* ==========================================
+QUANTITY
+========================================== */
+
+.cart-quantity{
+  display:flex;
+  align-items:center;
+  border:1px solid var(--color-border);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.cart-qty-btn{
+  width:38px;
+  height:38px;
+  border:none;
+  background:none;
+  cursor:pointer;
+  font-size:1rem;
+  transition: background .2s ease;
+}
+
+.cart-qty-btn:hover{
+  background: var(--color-surface);
+}
+
+.cart-qty-value{
+  width:42px;
+  text-align:center;
+  font-weight:600;
+  font-size:.95rem;
+}
+
+/* ==========================================
+REMOVE
+========================================== */
+
+.cart-remove{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border:none;
+  background:none;
+  cursor:pointer;
+  color:inherit;
+  opacity:.55;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.cart-remove:hover{
+  opacity:1;
+  transform:scale(1.05);
+}
+
+.cart-remove i{
+  font-size:.95rem;
+}
+
+/* ==========================================
+FOOTER
+========================================== */
+
+.cart-footer{
+  padding:1.5rem;
+  border-top: 1px solid rgba(0,0,0,.08);
+}
+
+.cart-summary{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:1rem;
+}
+
+.cart-checkout{
+  width:100%;
+}
