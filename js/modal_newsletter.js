@@ -1,34 +1,38 @@
-const newsletterForm =
-  document.querySelector('.newsletter-form');
+const newsletterForm = document.querySelector(".newsletter-form");
+const modal = document.getElementById("newsletter-modal");
+const closeBtn = document.querySelector(".newsletter-modal-close");
+const privacyCheckbox = document.getElementById("newsletterPrivacy");
 
-const modal =
-  document.getElementById('newsletter-modal');
+if(newsletterForm){
 
-const closeBtn =
-  document.querySelector('.newsletter-modal-close');
+  newsletterForm.addEventListener("submit", e => {
+    e.preventDefault();
 
-newsletterForm.addEventListener('submit', function(e){
+    if(!privacyCheckbox.checked){
+      alert("Debes aceptar la Política de Privacidad para suscribirte.");
+      return;
+    }
 
-  e.preventDefault();
+    localStorage.setItem("ostrich-newsletter", "subscribed");
+    modal.classList.add("show");
+    newsletterForm.reset();
+  });
 
-  modal.classList.add('show');
+}
 
-  this.reset();
+if(closeBtn){
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("show");
+  });
 
-});
+}
 
-closeBtn.addEventListener('click', () => {
+if(modal){
+  modal.addEventListener("click", e => {
+    if(e.target === modal){
+      modal.classList.remove("show");
+    }
 
-  modal.classList.remove('show');
+  });
 
-});
-
-modal.addEventListener('click', (e) => {
-
-  if(e.target === modal){
-
-    modal.classList.remove('show');
-
-  }
-
-});
+}
