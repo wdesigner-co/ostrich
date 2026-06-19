@@ -24,8 +24,7 @@
 
   --color-secondary:#FCFAF8;
 
-  --color-overlay-dark:
-  rgba(61,44,39,.45);
+  --color-overlay-dark: rgba(61,44,39,.45);
 
 
   /* ACCENTS */
@@ -59,8 +58,6 @@
      TYPOGRAPHY
   ====================== */
 
-
-
   --font-primary:
     "Montserrat",
     sans-serif;
@@ -72,7 +69,6 @@
   --font-editorial:
     "EB Garamond",
     serif;
-
 
 
   /* =====================
@@ -177,72 +173,41 @@ h3,
 
 h1,
 h2,
-h3
-{
-
+h3 {
   color:
   var(--color-primary);
 }
 
 .hero-content h1{
-
-  font-family:
-  var(--font-display);
-
-  font-size:
-  clamp(4.5rem,8vw,7.5rem);
-
+  font-family: var(--font-display);
+  font-size: clamp(4.5rem,8vw,7.5rem);
   font-weight:500;
-
   line-height:.92;
-
   letter-spacing:-.04em;
-
   color:#FCFAF8;
-
   max-width:11ch;
 }
 
 h2{
-
-  font-family:
-  var(--font-display);
-
-  font-size:
-  clamp(3rem,5vw,5rem);
-
+  font-family: var(--font-display);
+  font-size: clamp(3rem,5vw,5rem);
   font-weight:500;
-
   line-height:1;
-
   letter-spacing:-.02em;
-
   color:var(--color-primary);
 }
 
 h3{
-
-  font-family:
-  var(--font-display);
-
-  font-size:
-  clamp(2rem,3vw,3rem);
-
+  font-family: var(--font-display);
+  font-size: clamp(2rem,3vw,3rem);
   font-weight:500;
-
   line-height:1.05;
 }
 
 h4{
-
-  font-family:
-  var(--font-display);
-
-  font-size:
-  clamp(1.25rem,2vw,2rem);
-
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem,2vw,2rem);
   font-weight:500;
-
   line-height:1.1;
   color:var(--color-text-primary);
 }
@@ -254,21 +219,12 @@ p {
 .eyebrow {
   display: inline-block;
   margin-bottom: 1rem;
- 
-
-  font-family:
-  var(--font-primary);
-
+  font-family:var(--font-primary);
   font-size:.75rem;
-
   font-weight:500;
-
   letter-spacing:.28em;
-
   text-transform:uppercase;
-
-  color:
-  var(--color-accent-gold);
+  color: var(--color-accent-gold);
 }
 
 /* =========================================================
@@ -290,30 +246,15 @@ p {
    HEADER
 ========================================================= */
 
-/*.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  background:rgba(255,255,255,0.92);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid transparent;
-  transition: var(--transition-base);
-}*/
-
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
-
   background: rgba(255,255,255,0.08);
-
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-
   border-bottom: 1px solid rgba(255,255,255,0.15);
-
   transition:
     background 0.4s ease,
     backdrop-filter 0.4s ease,
@@ -325,35 +266,35 @@ p {
    HEADER GLASS
 ================================== */
 
-.header:not(.header-scrolled) .nav-list a {
-
+.header:not(.header-scrolled) .nav-list a  {
   color:  #C7AF8F;
-
-  text-shadow:
-    0 1px 3px rgba(0,0,0,0.15);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
 .header:not(.header-scrolled) .icon-btn,
 .header:not(.header-scrolled) .menu-btn {
+  color: var(--color-accent-gold);
+}
 
-  color: #fcfcfc;
+.icon-btn,
+.menu-btn {
+  color: var(--color-accent-gold);
+  transition: color .3s ease;
+}
+
+.icon-btn:hover,
+.menu-btn:hover {
+  color: var(--color-accent-camel);
 }
 
 /* Estado cuando se hace scroll */
-
 .header.header-scrolled {
-
   background: rgba(255,255,255,0.92);
-
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
   border-color: var(--color-border);
-
   box-shadow: var(--shadow-soft);
 }
-
-
 
 .header-scrolled {
   border-color: var(--color-border);
@@ -374,8 +315,7 @@ p {
 
 .logo img {
   width: 240px;
-  height: 70px;
- 
+  height: 70px; 
 }
 
 .nav-list {
@@ -386,14 +326,10 @@ p {
 .nav-list a {
   position: relative;
   font-size: 0.95rem;
-   font-family:
-  var(--font-primary);
-
+   font-family: var(--font-primary);
   font-size:.82rem;
-
   font-weight:500;
   letter-spacing:.18em;
-
   text-transform:uppercase;
 }
 
@@ -405,8 +341,7 @@ p {
   width: 0;
   height: 1px;
   background: currentColor;
-  transition: var(--transition-base);
-  
+  transition: var(--transition-base);  
 }
 
 .nav-list a:hover::after {
@@ -428,98 +363,61 @@ p {
 }
 
 .dropdown-icon {
-
   font-size: .7rem;
-
-  transition:
-    transform .3s ease;
+  transition: transform .3s ease;
 }
 
 /* menú oculto */
-
 .dropdown-menu {
-
   position: absolute;
-
   top: calc(100% + 18px);
-
   left: 50%;
-
   transform:
     translateX(-50%)
     translateY(10px);
-
   min-width: 220px;
-
   padding: 12px;
-
   background: rgba(255,255,255,.96);
-
   backdrop-filter: blur(20px);
-
-  border:
-    1px solid rgba(0,0,0,.06);
-
+  border: 1px solid rgba(0,0,0,.06);
   border-radius: 16px;
-
-  box-shadow:
-    0 20px 50px rgba(0,0,0,.08);
-
+  box-shadow: 0 20px 50px rgba(0,0,0,.08);
   opacity: 0;
-
   visibility: hidden;
-
   transition:
     opacity .3s ease,
     transform .3s ease,
     visibility .3s ease;
-
   z-index: 1000;
 }
 
 /* item submenu */
-
 .dropdown-menu a {
-
   display: block;
-
   padding: 12px 16px;
-
   border-radius: 10px;
-
   font-size: .78rem;
-
   letter-spacing: .15em;
-
   text-transform: uppercase;
 }
 
 /* hover */
-
 .dropdown-menu a:hover {
-
-  background:
-    rgba(157,125,130,.08);
+  background:  rgba(157,125,130,.08);
 }
 
 /* abierto */
-
 .nav-dropdown.is-open .dropdown-menu {
-
   opacity: 1;
-
   visibility: visible;
-
   transform:
     translateX(-50%)
     translateY(0);
 }
 
 .nav-dropdown.is-open .dropdown-icon {
-
   transform: rotate(180deg);
 }
-
 
 .header-actions {
   display: flex;
@@ -555,7 +453,6 @@ p {
 }
 
 .menu-btn i {
-
   transition:
     transform .25s ease,
     opacity .25s ease;
@@ -564,7 +461,6 @@ p {
 .nav-open ~ .header-actions .menu-btn i {
   transform: rotate(90deg);
 }
-
 
 /* =========================================================
    FOOTER
@@ -582,7 +478,6 @@ p {
   align-items: start;
 }
 
-
 .logo-footer img {
   width: 150px;
   max-height: 84px;
@@ -597,51 +492,36 @@ p {
 }
 
 .footer-social {
-
   display: flex;
-
   gap: 18px;
-
   margin-top: 18px;
 }
 
 .footer-social a {
-
   width: 34px;
   height: 34px;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   border: 1px solid var(--color-border);
-
   border-radius: 50%;
-
   transition: all .3s ease;
 }
 
 .footer-social a i {
-
   font-size: 0.9rem;
 }
 
 .footer-social a:hover {
-
   transform: translateY(-3px);
-
   background: #500a0a;
-
   color: white;
-
   border-color: #571919;
 }
 
 .footer-links h4{
   margin-bottom: 1rem;
 }
-/* agregado */
 
 /* ====================================
    FOOTER LINKS ANIMATION
@@ -667,11 +547,6 @@ p {
   transform: scaleX(1);
 }
 
-
-
-
-
-
 .footer li + li {
   margin-top: 0.8rem;
 }
@@ -688,55 +563,36 @@ p {
 ========================================================= */
 
 .whatsapp-btn {
-
   position: fixed;
-
   right: 24px;
   bottom: 24px;
-
   width: 64px;
   height: 64px;
-
   border-radius: 50%;
-
-  background:
-    var(--color-whatsapp);
-
+  background:  var(--color-whatsapp);
   color: white;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   font-size: 1.8rem;
-
-  box-shadow:
-    0 12px 30px rgba(0,0,0,0.18);
-
+  box-shadow:  0 12px 30px rgba(0,0,0,0.18);
   z-index: 999;
-
   opacity: 0;
   visibility: hidden;
-
   transform: translateY(20px);
-
-  transition:
-    var(--transition-base);
+  transition: var(--transition-base);
 }
 
 .whatsapp-btn.show {
-
   opacity: 1;
-
   visibility: visible;
-
   transform: translateY(0);
 }
 
 .whatsapp-btn:hover {
   background-color: #3D441E;
 }
+
 /* =========================================================
    RESPONSIVE
 ========================================================= */
@@ -745,10 +601,8 @@ p {
     .footer-grid {
     grid-template-columns: 1fr;
   }
-
-  
+ 
 }
-
 
 @media (min-width:1101px){
 
@@ -785,9 +639,6 @@ p {
   }
 }
 
-
-
-
 @media (max-width: 768px) {
 
     .section{
@@ -815,25 +666,15 @@ p {
     display: flex;
   }
 
-
-
   .nav-list a {
-
   display: block;
-
   padding: 14px 16px;
-
   border-radius: 10px;
-
-  transition:
-    background-color 0.25s ease,
-    padding-left 0.25s ease;
+  transition:background-color 0.25s ease, padding-left 0.25s ease;
 }
 
 .nav-list a:hover {
-
   background: rgba(137, 57, 65,0.08);
-
   padding-left: 22px;
 }
 
@@ -853,101 +694,63 @@ p {
 }
 
 .dropdown-menu {
-
   position: static;
-
   transform: none;
-
   opacity: 1;
-
   visibility: visible;
-
   background: transparent;
-
   border: none;
-
   box-shadow: none;
-
   padding: 0;
-
   margin-top: 10px;
-
   max-height: 0;
-
   overflow: hidden;
-
-  transition:
-    max-height .3s ease;
+  transition:  max-height .3s ease;
 }
 
 .nav-dropdown.is-open .dropdown-menu {
-
   max-height: 200px;
-
   opacity: 1;
-
   visibility: visible;
-
   transform: none;
 }
 
 .dropdown-menu a {
-
   display: block;
   width: 100%;
-
   padding: 14px 16px;
-
   border-radius: 10px;
-
   font-size: .75rem;
-
   font-weight: 500;
-
   letter-spacing: .18em;
-
   text-transform: uppercase;
-
   color: inherit;
-
   transition:
     background-color .25s ease,
     padding-left .25s ease;
 }
 
 .dropdown-menu a:hover {
-
   background: rgba(137,57,65,.08);
-
   padding-left: 22px;
 }
 
 .dropdown-menu a::after {
-
   content: "";
-
   position: absolute;
-
   left: 16px;
-
   bottom: 8px;
-
   width: 0;
-
   height: 1px;
-
   background: currentColor;
-
   transition: width .35s ease;
 }
 
 .dropdown-menu a:hover::after {
-
   width: calc(100% - 32px);
 }
 
 .nav-dropdown.is-open .dropdown-icon {
-
   transform: rotate(180deg);
 }
 
@@ -956,19 +759,25 @@ p {
 ================================== */
 
 .header:not(.header-scrolled) .nav-list a {
-
   color: #000000;
-
-  text-shadow:
-    0 1px 3px rgba(0,0,0,0.15);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
 .header:not(.header-scrolled) .icon-btn,
 .header:not(.header-scrolled) .menu-btn {
-
-  color: #fcfcfc;
+  color: var(--color-accent-gold);
 }
 
+.icon-btn,
+.menu-btn {
+  color: var(--color-accent-gold);
+  transition: color .3s ease;
+}
+
+.icon-btn:hover,
+.menu-btn:hover {
+  color: var(--color-accent-camel);
+}
 
 }
 
