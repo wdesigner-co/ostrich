@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/estilos_prueba.css" />
   <link rel="stylesheet" href="css/index_estilos.css" />
   <link rel="stylesheet" href="css/cart_drawer.css">
+  
 
   <!-- FAVICON -->
   <link rel="icon" href="img/logos/favicon.png" type="image/png">
@@ -28,17 +29,17 @@
 </head>
 
 <body>
-
   <!-- =========================
     HEADER
   ========================== -->
-
   <header class="header">
     <div class="container nav-container">
+      <!--LOGO Header-->
       <a href="index.html" class="logo">
         <img src="img/logos/logo_horizontal_240x70.png" alt="Logotipo" />
       </a>
-      
+
+      <!-- Barra de Navegación y Aside-->
       <nav class="nav" aria-label="Principal">
         <ul class="nav-list">
           <li class="nav-dropdown">
@@ -56,12 +57,15 @@
           <li><a href="find_us.html">Find Us</a></li>
         </ul>
       </nav>
-
+      
+      <!-- Iconos del header-->
       <div class="header-actions">
+        <!--Carrito de Compras-->
         <button id="cartButton" class="icon-btn" aria-label="Carrito"> 
           <i class="fa-solid fa-bag-shopping"></i>
         </button>
-
+        
+        <!--Menú Hamburguesa!-->
         <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
           <!-- <img src="assets/icons/menu.svg" alt=""> -->
@@ -75,10 +79,11 @@
     MAIN
   ========================== -->
   <main>
+    <!-- =========================
+      SECCION HERO
+    ========================== -->
     <section class="hero">
-      <!--div class="hero-image">
-        <img src="img/hero/hero_01.png" alt="Colección destacada" />
-      </!--div-->
+      <!-- Imágenes de Fondo Horizontal y Vertical-->>
       <div class="hero-image">
         <picture>
           <!-- Mobile -->
@@ -184,7 +189,7 @@
             </div>
           </article>
 
-          <!-- PRODUCT CARD 3 -->
+          <!-- PRODUCT CARD 3 AZALEA-->
           <article class="product-card">
             <div class="product-image hover-reveal">
               <img class="primary-image" src="img/products/cattleya_azalea.png" alt="Producto 3" />
@@ -198,7 +203,7 @@
             </div>
           </article>
 
-          <!-- PRODUCT CARD 4 -->
+          <!-- PRODUCT CARD 4 CATTLEYA BEIGE-->
           <article class="product-card">
             <div class="product-image hover-reveal">
               <img class="primary-image" src="img/products/Cattleya_Beige.png" alt="Producto 4" />
@@ -341,36 +346,22 @@
     <section class="newsletter section">
 
       <div class="container newsletter-box">
-
         <div>
-          <span class="eyebrow">
-            Newsletter
-          </span>
-
-          <h2>
-            Únete a nuestra comunidad
-          </h2>
+          <span class="eyebrow">Newsletter</span>
+          <h2>Únete a nuestra comunidad</h2>
+          <p class="newsletter-benefit">Recibe un beneficio de bienvenida del 15% en tu primera compra y acceso prioritario a nuevas colecciones, lanzamientos y ediciones limitadas.</p>
         </div>
 
         <form class="newsletter-form">
-
-          <label class="sr-only" for="email">
-            Correo electrónico
-          </label>
-
-          <input
-            type="email"
-            id="email"
-            placeholder="Tu correo electrónico"
-            required
-          />
-
-          <button type="submit" class="btn btn-primary">
-            Suscribirse
-          </button>
-
+          <div class="newsletter-actions">
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="btn btn-primary">Obtener 15% OFF</button>
+          </div>
+          <div class="newsletter-consent">
+            <input type="checkbox" id="newsletterPrivacy" required>
+            <label for="newsletterPrivacy">Acepto la<a href="politicas.html">Política de Privacidad</a></label>
+          </div>
         </form>
-
       </div>
 
     </section>
@@ -439,25 +430,25 @@
         <h4>Sobre Nosotros</h4>
         <ul>
           <li><a href="#editorial">Editorial</a></li>
-          <li><a href="#">Envíos y Devoluciones</a></li>
-          <li><a href="#">Politicas de Privacidad</a></li>
+          <li><a href="envios.html">Envíos y Devoluciones</a></li>
+          <li><a href="politicas.html">Politicas de Privacidad</a></li>
         </ul>
       </div>
 
       <div class="footer-links">
         <h4>Tienda</h4>
         <ul>
-          <li><a href="#collections">Colecciones</a></li>
+          <li><a href="botanica.html">Colecciones</a></li>
           <li><a href="#">Accesorios</a></li>
-          <li><a href="#">Ostrich Gif Card</a></li>
+          <li><a href="#">Ostrich Gift Card</a></li>
         </ul>
       </div>
 
       <div class="footer-links">
         <h4>Contáctanos</h4>
         <ul>
-          <li><a href="#">Correo</a></li>
-          <li><a href="#">Ubicación</a></li>
+          <li><a href="find_us.html#contact_us">Correo</a></li>
+          <li><a href="find_us.html#visit_us">Ubicación</a></li>
         </ul>
       </div>
     </div>
@@ -471,42 +462,69 @@
   <!-- =========================
        WHATSAPP FLOAT BUTTON
   ========================== -->
-
   <a class="whatsapp-btn" href="https://wa.link/ncacsm" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
     <!--img src="assets/icons/whatsapp.svg" alt="" -->
   </a>
+
+  <!-- =========================
+      BANNER COOKIES
+  ========================== -->
+  <section id="cookieBanner" class="cookie-banner">
+    <p>Utilizamos cookies para mejorar tu experiencia. Puedes aceptar todas, rechazarlas o personalizar tus preferencias.</p>
+    <div class="cookie-actions">
+      <button id="cookieSettingsBtn" class="btn btn-light">Configurar</button>
+      <button id="cookieRejectBtn" class="btn btn-light">Rechazar</button>
+      <button id="cookieAcceptBtn" class="btn btn-dark">Aceptar todas</button>
+    </div>
+  </section>
   
+  <section id="cookieSettings" class="cookie-settings">
+    <header>
+      <h3>Preferencias de Cookies</h3>
+    </header>
+    
+    <label><input type="checkbox" checked disabled>Cookies Esenciales</label>
+    <label><input type="checkbox" id="functionalCookies">Cookies de Funcionalidad</label>
+    <label><input type="checkbox" id="marketingCookies">Cookies de Marketing</label>
+    
+    <button id="saveCookiePreferences" class="btn btn-dark">Guardar Preferencias</button>
+  </section>
+  
+  <!-- =========================
+      MODAL NEWSLETTER
+  ========================== -->
   <div id="newsletter-modal" class="newsletter-modal">
     <div class="newsletter-modal-content">
-      <button class="newsletter-modal-close">&times;</button>
-      <h3>¡Bienvenida a Ostrich!</h3>
-      <p>Gracias por unirte a nuestra comunidad.Pronto recibirás novedades, lanzamientos y piezas exclusivas.</p>
+      <button class="newsletter-modal-close" aria-label="Cerrar"> &times;</button>
+      <span class="eyebrow"> Welcome to Ostrich </span>
+      <h3>You've unlocked 15% OFF</h3>
+      <p>Thank you for joining our community.Your welcome benefit has been activated and will be available when you complete your first purchase.</p>
     </div>
   </div>
-
-<!-- Bolsa de Compras -->
-<aside id="cartDrawer" class="cart-drawer" aria-hidden="true"> 
-  <header class="cart-header">
-    <h2>Mi carrito<span id="cartCount"> (0)</span></h2>
-    <button class="cart-close" aria-label="Cerrar"> 
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-  </header>
-
-  <section class="cart-items" id="cartItems">
+  
+  <!-- =========================
+      CARRITO DE COMPRAS
+  ========================== -->
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true"> 
+    <header class="cart-header">
+      <h2>Mi carrito<span id="cartCount"> (0)</span></h2>
+      <button class="cart-close" aria-label="Cerrar"> 
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </header>
+    <section class="cart-items" id="cartItems">
     <!-- JS -->
-  </section>
-  <footer class="cart-footer">
-    <div class="cart-summary">
-      <span>Subtotal</span>
-      <strong id="cartSubtotal">$0</strong>
-    </div>
-    <a href="checkout.html" class="btn btn-dark cart-checkout">Checkout</a>
-  </footer>
-</aside>
-
-<div id="cartOverlay"class="cart-overlay"></div>
+    </section>
+    <footer class="cart-footer">
+      <div class="cart-summary">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">$0</strong>
+      </div>
+      <a href="checkout.html" class="btn btn-dark cart-checkout">Checkout</a>
+    </footer>
+  </aside>
+  <div id="cartOverlay"class="cart-overlay"></div>
 
 
   <script src="js/app2.js"></script>
@@ -514,6 +532,7 @@
   <script src="js/modal_newsletter.js"></script>
   <script src="js/personalizacion.js">  </script>
   <script src="js/drawer.js"></script>
+  <script src="js/cookies_banner.js"></script>
 
  
 

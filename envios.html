@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ostrich | Prototipo</title>
+  <meta name="description" content="Luxury fashion experience inspired by modern editorial ecommerce." />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- FALLBACK ICONS LOCAL -->
+  <!-- <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css"/> -->
+
+  <link rel="stylesheet" href="css/estilos_prueba.css" />
+  <link rel="stylesheet" href="css/index_estilos.css" />
+  <link rel="stylesheet" href="css/cart_drawer.css">
+  <link rel="stylesheet" href="css/politicas.css">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="img/logos/favicon.png" type="image/png">
+
+</head>
+
+<body>
+  <!-- =========================
+    HEADER
+  ========================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <!--LOGO Header-->
+      <a href="index.html" class="logo">
+        <img src="img/logos/logo_horizontal_240x70.png" alt="Logotipo" />
+      </a>
+
+      <!-- Barra de Navegación y Aside-->
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li class="nav-dropdown">
+            <a href="#" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Collections
+              <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="botanica.html">Botanical</a></li>
+            </ul>
+          </li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="index.html#ostrichGirls">Ostrich Girls</a></li>          
+          <li><a href="find_us.html">Find Us</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Iconos del header-->
+      <div class="header-actions">
+        <!--Carrito de Compras-->
+        <button id="cartButton" class="icon-btn" aria-label="Carrito"> 
+          <i class="fa-solid fa-bag-shopping"></i>
+        </button>
+        
+        <!--Menú Hamburguesa!-->
+        <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <img src="assets/icons/menu.svg" alt=""> -->
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================
+    MAIN
+  ========================== -->
+  <main class="legal-page">
+    <section class="legal-hero">
+      <div class="container">
+        <header class="collection-intro">
+          <span class="eyebrow">Información Legal</span>
+          <h1>Políticas de Envío y Devoluciones</h1>
+          <p>Excelencia y estándares de envíos.</p>
+        </header>
+      </div>
+    </section>
+    
+    <section class="legal-content section">
+      <div class="legal-container">
+        <h3>Experiencia de Entrega y Garantía de Satisfacción</h3>
+        <section>
+          <p>En OSTRICH Atelier, cada pieza es el resultado de un meticuloso proceso artesanal. Nos aseguramos de que la experiencia de recibir su pedido mantenga los mismos estándares de excelencia que dedicamos a su creación. A continuación, detallamos nuestras políticas de envío, cambios y devoluciones, diseñadas bajo el marco legal de la República de Colombia (Ley 1480 de 2011) para garantizar total transparencia y seguridad en su adquisición.</p>
+          <h3>1. Políticas de Envío y Distribución Nacional</h3>
+          <ul>
+            <li><strong>Tarifa Estándar de Envío:</strong> Con el fin de ofrecer claridad desde el inicio de su compra, implementamos una tarifa única y fija de $20.000 COP para envíos a cualquier destino dentro del territorio colombiano.</li>
+            <li><strong>Tiempos de Procesamiento y Entrega:</strong> Las piezas en inventario se procesan y despachan en un plazo de 1 a 2 días hábiles posteriores a la confirmación del pago.</li>
+            <li>El tiempo estimado de transporte por parte de nuestros aliados logísticos es de 2 a 5 días hábiles para ciudades principales, y hasta 8 días hábiles para trayectos especiales o zonas extendidas.</li>
+            <li><strong>Seguimiento del Envío:</strong> Una vez su pedido sea entregado a la empresa transportadora, recibirá una notificación vía correo electrónico con el número de guía correspondiente para el rastreo de su pieza en tiempo real.</li>
+            <li><strong>Protocolo de Entrega:</strong> Por seguridad de su inversión, toda mercancía viaja debidamente asegurada. La transportadora realizará hasta dos (2) intentos de entrega en la dirección registrada. Si el cliente no se encuentra en el domicilio o no es posible realizar la entrega tras estos intentos, el producto regresará a nuestro taller central. Los costos de un nuevo envío deberán ser asumidos por el comprador.</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>2. Derecho de Retracto (Compras Online)</h3>
+          <p>De acuerdo con el artículo 47 del Estatuto del Consumidor (Ley 1480 de 2011), para compras realizadas a través de nuestra tienda online, el cliente tiene derecho a retractarse de la compra dentro de los cinco (5) días hábiles siguientes a la fecha de entrega del producto.</p>
+          <ul>
+            <li><strong>Condiciones para el Retracto:</strong> Para hacer efectivo este derecho, el producto debe ser devuelto en perfectas condiciones: no debe presentar señales de uso, alteración, manchas o desgaste, y debe conservar todas sus etiquetas, empaques originales y certificados de autenticidad intactos.</li>
+            <li><strong>Logística y Costos:</strong> De conformidad con la ley, los costos de transporte, mensajería y demás gastos que conlleve la devolución del producto para el ejercicio del retracto serán asumidos en su totalidad por el consumidor.</li>
+            <li><strong>Reembolso:</strong> Una vez recibida la pieza en nuestro taller y verificada su condición de total originalidad y perfecto estado, OSTRICH Atelier procederá a la devolución del dinero pagado por el producto en un plazo no mayor a treinta (30) días calendario.</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>3. Políticas de Cambios Comerciales (Por Gusto o Preferencia)</h3>
+          <p>Deseamos que su experiencia con nuestra marca sea plenamente satisfactoria. Si una vez recibida la pieza prefiere cambiarla por otra referencia, colección o color, OSTRICH Atelier ofrece un plazo de quince (15) días calendario desde la recepción del pedido para solicitar el cambio.</p>
+          <ul>
+            <li><strong>Requisitos:</strong> Al igual que en el retracto, la pieza debe estar completamente nueva, sin usar y en su empaque original.</li>
+            <li><strong>Procedimiento:</strong> Deberá comunicarse con nuestra línea de Concierge Digital o escribir al correo electrónico de soporte. Los costos de envío correspondientes al retorno de la pieza original y el despacho de la nueva referencia serán asumidos por el cliente, a menos que se trate de una dinámica comercial explícitamente exceptuada.</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>4. Garantía Legal y Defectos de Fabricación</h3>
+          <p>Nuestras piezas están elaboradas con materias primas seleccionadas y técnicas de alta manufactura. No obstante, ante cualquier eventualidad técnica:</p>
+          <ul>
+            <li><strong>Término de la Garantía:</strong> OSTRICH Atelier otorga una garantía legal de [Insertar tiempo, ej: tres (3) meses o un (1) año] contados a partir de la entrega del producto, la cual cubre defectos de fabricación, herrajes, costuras o fallas estructurales del material bajo condiciones de uso normal. La garantía no cubre el desgaste natural de los materiales, raspaduras por fricción, ni daños ocasionados por el contacto con sustancias químicas, agua o un mantenimiento inadecuado.</li>
+            <li><strong>Evaluación Técnica:</strong> El producto será evaluado por nuestro departamento de calidad artesanal. Si se determina un defecto de fabricación, se procederá en primera instancia a la reparación técnica sin costo alguno. En caso de no ser reparable, se ofrecerá el cambio por una pieza idéntica o la emisión de un saldo a favor.</li>
+            <li><strong>Costos de Garantía:</strong> En los casos donde se dictamine que la garantía es procedente, todos los costos de transporte y logística serán asumidos por OSTRICH Atelier.</li>           
+          </ul>
+          <p>Para iniciar cualquier trámite de envío, cambio o garantía, puede ponerse en contacto con nuestro canal oficial de atención: </p>
+        </section>       
+        
+
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-branding">
+        <a href="index.html" class="logo-footer">
+          <img src="img/logos/Recurso 1.png" alt="Logotipo" />
+        </a>
+        
+        <p>Handcrafted in Colombia</p>
+        <p>For treasures haunters</p>
+        
+        <div class="footer-social">
+          <a href="https://facebook.com"  target="_blank"  aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          
+          <a href="https://www.instagram.com/ostrich_oficial/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Sobre Nosotros</h4>
+        <ul>
+          <li><a href="index.html#editorial">Editorial</a></li>
+          <li><a href="envios.html">Envíos y Devoluciones</a></li>
+          <li><a href="politicas.html">Politicas de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="botanica.html">Colecciones</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Ostrich Gift Card</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li><a href="find_us.html#contact_us">Correo</a></li>
+          <li><a href="find_us.html#visit_us">Ubicación</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p> © 2026 | Designed by WDesigner.co. | All rights reserved. </p>
+    </div>
+
+  </footer>
+
+  <!-- =========================
+       WHATSAPP FLOAT BUTTON
+  ========================== -->
+  <a class="whatsapp-btn" href="https://wa.link/ncacsm" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <!--img src="assets/icons/whatsapp.svg" alt="" -->
+  </a>
+    
+  <!-- =========================
+      CARRITO DE COMPRAS
+  ========================== -->
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true"> 
+    <header class="cart-header">
+      <h2>Mi carrito<span id="cartCount"> (0)</span></h2>
+      <button class="cart-close" aria-label="Cerrar"> 
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </header>
+    <section class="cart-items" id="cartItems">
+    <!-- JS -->
+    </section>
+    <footer class="cart-footer">
+      <div class="cart-summary">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">$0</strong>
+      </div>
+      <a href="checkout.html" class="btn btn-dark cart-checkout">Checkout</a>
+    </footer>
+  </aside>
+  <div id="cartOverlay"class="cart-overlay"></div>
+
+
+  <script src="js/app2.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/modal_newsletter.js"></script>
+  <script src="js/personalizacion.js">  </script>
+  <script src="js/drawer.js"></script>
+
+ 
+
+</body>
+
+</html>
